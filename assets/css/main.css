@@ -1,8 +1,4 @@
-header {
-  position: relative;
-}
-
-nav {
+header > nav {
 top: 0;
 left: 0;
 width: 100%;
@@ -13,6 +9,7 @@ padding-top: 0px;
 background: none;
 background-color: RED;
 transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+z-index: 100;
 }
 
 #box-header {
@@ -23,17 +20,11 @@ transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
   box-sizing: border-box;
 }
 
-header {
-  background-color: #CA3C25;
-  padding-left: 10%;
-}
 ul{
   margin: 0px;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    box-sizing: border-box;
-
+  position: absolute;
+  top: 0;
+  height: 100%;
 }
 li{
   display: inline-block;
@@ -47,4 +38,75 @@ a{
 }
 a:hover{
   color:green;
+}
+.box-container {
+  margin: 5% 10%;
+  background-color: rgb(56, 131, 170);
+}
+
+
+/*edit my div*/
+#departamentos >  div {
+  /*width: 210px;
+  height: 210px;
+  display: inline-block;
+  position: relative;
+  margin: 2% 4% 2% 0;
+  box-sizing: border-box;*/
+  width: 220px;
+    height: 270px;
+    box-shadow: 8px 10px 14px -8px #CECECE;
+    float: left;
+    text-align: center;
+    background-color: #f4f1f1;
+    padding-top: 30px;
+    margin: 5px;
+    -webkit-transition: all 1s ease;
+
+}
+img{
+  width: 210px;
+  height: 210px;
+}
+
+span:nth-child(1) {
+  width: 210px;
+  height: 210px;
+  background: rgba(114, 142, 155, 0.27);
+  position: absolute;
+}
+span:nth-child(1):hover{
+  background: rgba(114, 142, 155, 0);
+}
+
+div > .nombre {
+  right: 5%;
+  bottom: 9%;
+  color: white;
+  position: absolute;
+}
+
+
+
+/*Center my page*/
+#container {
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+#container:before, #container:after {
+    content: " ";
+    display: table;
+}
+
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#container:after {
+    clear: both;
 }
