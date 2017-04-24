@@ -9,7 +9,7 @@ padding-top: 0px;
 background: none;
 background-color: RED;
 transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
-z-index: 100;
+z-index: 1
 }
 
 #box-header {
@@ -40,29 +40,63 @@ a:hover{
   color:green;
 }
 .box-container {
-  margin: 5% 10%;
-  background-color: rgb(56, 131, 170);
+  width: 1200px;
+    background-color: rgb(56, 131, 170);
+    margin: 5% auto;
 }
 
 
-/*edit my div*/
-#departamentos >  div {
-  /*width: 210px;
-  height: 210px;
-  display: inline-block;
-  position: relative;
-  margin: 2% 4% 2% 0;
-  box-sizing: border-box;*/
-  width: 220px;
-    height: 270px;
-    box-shadow: 8px 10px 14px -8px #CECECE;
-    float: left;
-    text-align: center;
-    background-color: #f4f1f1;
-    padding-top: 30px;
-    margin: 5px;
-    -webkit-transition: all 1s ease;
 
+
+
+
+/*Center my page*/
+#departamento {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+  background: purple;
+  box-sizing: border-box;
+}
+
+#departamento:before, #departamento:after {
+    content: " ";
+    display: table;
+}
+
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#departamento:after {
+    clear: both;
+}
+/*sección general*/
+#general {
+  width: 90%;
+background: yellow;
+margin-right: auto;
+margin-left: auto;
+padding-left: 14px;
+padding-right: 14px;
+box-sizing: border-box;
+}
+
+/*seccion de departamento*/
+.box-departament >  div {
+  width: 30%;
+  height: 350px;
+  position: relative;
+  box-shadow: 8px 10px 14px -8px #CECECE;
+  float: left;
+  text-align: center;
+  background-color: #f4f1f1;
+  padding-top: 30px;
+  margin: 1%;
+  -webkit-transition: all 1s ease;
 }
 img{
   width: 210px;
@@ -84,29 +118,4 @@ div > .nombre {
   bottom: 9%;
   color: white;
   position: absolute;
-}
-
-
-
-/*Center my page*/
-#container {
-  width: 900px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 14px;
-  padding-right: 14px;
-}
-
-#container:before, #container:after {
-    content: " ";
-    display: table;
-}
-
-*:before, *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-#container:after {
-    clear: both;
 }

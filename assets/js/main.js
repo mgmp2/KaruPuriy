@@ -30,7 +30,7 @@ var lastScrollTop = 0;
    for (var i = 0; i < styleCoder.length; i++) {
      createCoders(styleCoder[i].nombre, styleCoder[i].url);
    }
-   createtitle(dcf, document.getElementById("container"));
+   createtitle(dcf, document.getElementById("departamento"));
  });
 
 
@@ -51,8 +51,8 @@ var lastScrollTop = 0;
  }
  function createtitle(dcf,padre){
    console.log(padre);
-     var section = document.createElement("section");
-       section.setAttribute("id","departamentos");
+     var section = document.createElement("div");
+       section.classList.add("box-departament");
      section.appendChild(dcf);
      var title = document.createElement("h1");
      var text = document.createTextNode("StyleCoder");
