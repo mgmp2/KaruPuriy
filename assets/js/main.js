@@ -19,32 +19,39 @@ var lastScrollTop = 0;
 
 
 
- var arrayDep =   [{nombre: "Cajamarca", description: "cajamarca jajajajaja :v "},
-                     {nombre: "Tumbes", description: "cajamarca jajajajaja :v "},
-                     {nombre: "Piura", description: "cajamarca jajajajaja :v "},
-                     {nombre: "Chiclayo", description: "cajamarca jajajajaja :v "},
-                     {nombre: "Trujillo", description: "cajamarca jajajajaja :v "}];
+ var arrayDep =   [{nombre: "Cajamarca", description: "cajamarca jajajajaja :v "}];
+                    //  {nombre: "Tumbes", description: "cajamarca jajajajaja :v "},
+                    //  {nombre: "Piura", description: "cajamarca jajajajaja :v "},
+                    //  {nombre: "Chiclayo", description: "cajamarca jajajajaja :v "},
+                    //  {nombre: "Trujillo", description: "cajamarca jajajajaja :v "}];
  window.addEventListener("load", function (e){
    e.preventDefault();
    for (var i = 0; i < arrayDep.length; i++) {
-     createCoders(arrayDep[i].nombre, arrayDep[i].url);
+     createDep(arrayDep[i].nombre, arrayDep[i].description);
    }
    createtitle(dcf, document.getElementById("departamento"));
  });
 
 
- function createCoders(nombre, url){
+ function createDep(nombre, descripcion){
      var div = document.createElement("div");
-     var img = document.createElement("img");
-         img.setAttribute("src",url);
-         img.setAttribute("alt",nombre);
+     var img;
+     for(var i = 1 ; i < 5; i++){
+       console.log(i);
+       img = document.createElement("img");
+       img.setAttribute("src", "assets/img/"+nombre+"/img-0"+i+".jpg");
+       img.setAttribute("alt",nombre);
+       div.appendChild(img);
+     }
      var span = document.createElement("span");
      var text = document.createTextNode(nombre);
-         span.classList.add("nombre");
+     var desc = document.createTextNode(descripcion);
+         span.classList.add("descripcion");
          span.appendChild(text);
+         span.appendChild(desc);
+
      var span2 = document.createElement("span");
      div.appendChild(span2);
-     div.appendChild(img);
      div.appendChild(span);
      dcf.appendChild(div);
  }

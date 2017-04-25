@@ -117,11 +117,17 @@ img{
   background: rgba(114, 142, 155, 0);
 }
 
-div > .nombre {
-  right: 5%;
-  bottom: 9%;
-  color: white;
-  position: absolute;
+div > .descripcion {
+  width: 92%;
+    height: 33%;
+    background: aqua;
+    margin: 0 auto;
+    right: 4%;
+    bottom: 3%;
+    /* color: #2d2c6d; */
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
 }
 /*footer*/
 footer {
