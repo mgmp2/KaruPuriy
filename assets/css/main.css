@@ -90,34 +90,40 @@ a:hover{
   width: 90%;
 margin: 0 auto;
 }
-.box-picture >  div {
+.box-picture >  .box-Cajamarca {
   width: 30%;
   height: 350px;
   position: relative;
   box-shadow: 8px 10px 14px -8px #CECECE;
   float: left;
-  text-align: center;
   background-color: #f4f1f1;
   padding-top: 30px;
   margin: 1%;
   -webkit-transition: all 1s ease;
 }
-img{
-  width: 210px;
-  height: 210px;
-}
 
-.box-picture > div > span:nth-child(1) {
+
+/*.box-picture > div > .descripcion {
   width: 210px;
   height: 210px;
   background: rgba(114, 142, 155, 0.27);
   position: absolute;
-}
-.box-picture > div > span:nth-child(1):hover{
+}*/
+.box-picture > div > .descripcion:hover{
   background: rgba(114, 142, 155, 0);
 }
+.box-img {
+  display: flex;
 
-div > .descripcion {
+}
+.box-img > img {
+  width: 210px;
+  height: 210px;
+  position: absolute;
+  left: 17%;
+
+}
+.box-Cajamarca > .descripcion {
   width: 92%;
     height: 33%;
     background: aqua;
@@ -128,6 +134,9 @@ div > .descripcion {
     position: absolute;
     font-size: 20px;
     font-weight: bold;
+}
+.none {
+  display: none;
 }
 /*footer*/
 footer {

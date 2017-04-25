@@ -35,13 +35,23 @@ var lastScrollTop = 0;
 
  function createDep(nombre, descripcion){
      var div = document.createElement("div");
+          div.classList.add("box-"+nombre);
+    var divImg = document.createElement("div");
+          divImg.classList.add("box-img");
+
      var img;
      for(var i = 1 ; i < 5; i++){
-       console.log(i);
+       var arrayImg = [{}];
+       arrayImg.push("assets/img/"+nombre+"/img-0"+i+".jpg");
+       console.log(arrayImg);
        img = document.createElement("img");
+       img.addEventListener("mouseenter", function(e){
+         img.classList.add("none");
+         console.log(e);
+       })
        img.setAttribute("src", "assets/img/"+nombre+"/img-0"+i+".jpg");
-       img.setAttribute("alt",nombre);
-       div.appendChild(img);
+       img.setAttribute("alt",nombre+"-"+i);
+       divImg.appendChild(img);
      }
      var span = document.createElement("span");
      var text = document.createTextNode(nombre);
@@ -51,8 +61,9 @@ var lastScrollTop = 0;
          span.appendChild(desc);
 
      var span2 = document.createElement("span");
-     div.appendChild(span2);
+     div.appendChild(divImg);
      div.appendChild(span);
+     div.appendChild(span2);
      dcf.appendChild(div);
  }
  function createtitle(dcf,padre){
