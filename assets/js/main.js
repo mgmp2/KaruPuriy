@@ -1,6 +1,5 @@
   var dcf = document.createDocumentFragment();
   var lastScrollTop = 0;
-
   window.addEventListener("scroll", function(){
     var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
     if (currentScroll > lastScrollTop){
@@ -18,11 +17,25 @@
     lastScrollTop = currentScroll;
   }, false);
 
-  var arrayDep =   [{nombre: "Cajamarca", description: "Cajamarca, está situada a 2750 msnm en la margen este de la cadena oriental de la Cordillera de los Andes, en el valle interandino que forman los ríos Mashcon y Chonta"},
+  var arrayDep =   [{nombre: "Cajamarca", description: "Cajamarca, está situada a 2750 msnm en la margen este de la cadena oriental de la Cordillera de los Andes, en el valle interandino que forman los ríos Mashcon y Chonta",
+                      primerPaso: [{salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
+                                  {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
+                                  {salida:"6:00 p.m", llegada: "8:50", duracion: "15h", precio: "S/.100/120"},
+                                  {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
+                                  {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"}],
+                      segundoPaso: [{url: "assets/img/Cajamarca/queHacer/img-01.jpg", nombre: "Bahia"},
+                                    {url: "assets/img/Cajamarca/queHacer/img-02.jpg", nombre: "Bahia"},
+                                    {url: "assets/img/Cajamarca/queHacer/img-03.jpg", nombre: "Bahia"}],
+                      tercerPaso: [{url: "assets/img/Cajamarca/hotel/img-01.jpg", nombreHotel: "PRIMERhoTEL"}],
+                      cuartoPaso: [{url: "assets/img/Cajamarca/plato/img-01.jpg", plato:"adjkj"}]
+                      },
                      {nombre: "Tumbes", description: "cajamarca jajajajaja :v "},
                      {nombre: "Piura", description: "cajamarca jajajajaja :v "},
                      {nombre: "Chiclayo", description: "cajamarca jajajajaja :v "},
                      {nombre: "Trujillo", description: "cajamarca jajajajaja :v "}];
+
+                     console.log(arrayDep[0].primerPaso.length);
+                     console.log(arrayDep[0].segundoPaso);
 
   window.addEventListener("load", function(e){
    e.preventDefault();
@@ -32,13 +45,13 @@
    });
    document.getElementById("info-department").classList.add("disappear");
    for (var i = 0; i < arrayDep.length; i++) {
-     createDep(arrayDep[i].nombre, arrayDep[i].description);
+     createDep(i, arrayDep[i].nombre, arrayDep[i].description);
    }
    createtitle(dcf, document.getElementById("departamento"));
   });
 
 
-  function createDep(nombre, descripcion){
+  function createDep(index, nombre, descripcion){
     var div = document.createElement("div");
         div.classList.add("box-"+nombre);
     var divImg = document.createElement("div");
@@ -67,7 +80,8 @@
         masInf.addEventListener("click", function(e){
           (document.getElementById("box-departament")).classList.add("disappear");
           (document.getElementById("info-department")).classList.remove("disappear");
-
+          console.log(index);
+          detalleDepartamento(index,nombre);
         });
         var masInfo = document.createTextNode("Más información");
              masInf.appendChild(masInfo);

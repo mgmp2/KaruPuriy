@@ -1,2 +1,10 @@
-var info = docment.getElementById("info-department");
-var dep = document.getElementById("box-departament");
+
+
+
+function detalleDepartamento(i, nombre){
+  alert(i+" "+nombre);
+
+console.log(arrayDep[i].primerPaso);
+
+
+}
