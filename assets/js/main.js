@@ -1,6 +1,7 @@
-var dcf = document.createDocumentFragment();
-var lastScrollTop = 0;
- window.addEventListener("scroll", function(){
+  var dcf = document.createDocumentFragment();
+  var lastScrollTop = 0;
+
+  window.addEventListener("scroll", function(){
     var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
     if (currentScroll > lastScrollTop){
       document.getElementById("nav-header").classList.remove("header-in");
@@ -15,70 +16,83 @@ var lastScrollTop = 0;
       }
     }
     lastScrollTop = currentScroll;
- }, false);
+  }, false);
 
-
-
- var arrayDep =   [{nombre: "Cajamarca", description: "cajamarca jajajajaja :v "}];
+  var arrayDep =   [{nombre: "Cajamarca", description: "Cajamarca, está situada a 2750 msnm en la margen este de la cadena oriental de la Cordillera de los Andes, en el valle interandino que forman los ríos Mashcon y Chonta"},
                      {nombre: "Tumbes", description: "cajamarca jajajajaja :v "},
                      {nombre: "Piura", description: "cajamarca jajajajaja :v "},
                      {nombre: "Chiclayo", description: "cajamarca jajajajaja :v "},
                      {nombre: "Trujillo", description: "cajamarca jajajajaja :v "}];
- window.addEventListener("load", function (e){
+
+  window.addEventListener("load", function(e){
    e.preventDefault();
+   destino.addEventListener("click", function(){
+     document.getElementById("box-departament").classList.remove("disappear");
+     document.getElementById("info-department").classList.add("disappear");
+   });
+   document.getElementById("info-department").classList.add("disappear");
    for (var i = 0; i < arrayDep.length; i++) {
      createDep(arrayDep[i].nombre, arrayDep[i].description);
    }
    createtitle(dcf, document.getElementById("departamento"));
- });
+  });
 
 
- function createDep(nombre, descripcion){
-     var div = document.createElement("div");
-          div.classList.add("box-"+nombre);
+  function createDep(nombre, descripcion){
+    var div = document.createElement("div");
+        div.classList.add("box-"+nombre);
     var divImg = document.createElement("div");
-          divImg.classList.add("box-img");
-          divImg.addEventListener("mouseenter", function(){divImg.classList.add("animation")});
-          divImg.addEventListener("mouseout", function(){divImg.classList.remove("animation")});
+        divImg.classList.add("box-img");
+        divImg.addEventListener("mouseenter", function(){divImg.classList.add("animation")});
+        divImg.addEventListener("mouseout", function(){divImg.classList.remove("animation")});
 
-     var img;
-     for(var i = 1 ; i < 5; i++){
-       img = document.createElement("img");
+    for(var i = 1 ; i < 5; i++){
+        var img = document.createElement("img");
+            img.setAttribute("src", "assets/img/"+nombre+"/img-0"+i+".jpg");
+            img.setAttribute("alt",nombre+"-"+i);
+        divImg.appendChild(img);
+    }
 
-       img.setAttribute("src", "assets/img/"+nombre+"/img-0"+i+".jpg");
-       img.setAttribute("alt",nombre+"-"+i);
-
-       divImg.appendChild(img);
-     }
-    //  var spanColor = document.createElement("span");
-    //  divImg.appendChild(spanColor);
      var span = document.createElement("span");
-     var text = document.createTextNode(nombre);
      var desc = document.createTextNode(descripcion);
          span.classList.add("descripcion");
-         span.appendChild(text);
          span.appendChild(desc);
 
-     var span2 = document.createElement("span");
+     var nameDept = document.createElement("span");
+          nameDept.setAttribute("class","nameDep");
+     var nameDep = document.createTextNode(nombre);
+          nameDept.appendChild(nameDep);
+     var masInf = document.createElement("a");
+        masInf.setAttribute("href","#info-department");
+        masInf.addEventListener("click", function(e){
+          (document.getElementById("box-departament")).classList.add("disappear");
+          (document.getElementById("info-department")).classList.remove("disappear");
+
+        });
+        var masInfo = document.createTextNode("Más información");
+             masInf.appendChild(masInfo);
+
      div.appendChild(divImg);
      div.appendChild(span);
-     div.appendChild(span2);
+     div.appendChild(nameDept);
+     div.appendChild(masInf);
+
      dcf.appendChild(div);
- }
- function createtitle(dcf,padre){
-   var box = document.createElement("div");
-       box.classList.add("box-departament");
-     var div = document.createElement("div");
-       div.classList.add("box-picture");
-     div.appendChild(dcf);
-     var title = document.createElement("h1");
-     var text = document.createTextNode("arrayDep");
-         title.appendChild(text);
-     var line = document.createElement("h2");
+  }
 
-     box.appendChild(title);
-     box.appendChild(line);
-     box.appendChild(div);
+  function createtitle(dcf,padre){
+    var box = document.createElement("div");
+        box.setAttribute("id","box-departament");
+    var div = document.createElement("div");
+        div.classList.add("box-picture");
+        div.appendChild(dcf);
+    var title = document.createElement("h1");
+    var text = document.createTextNode("arrayDep");
+        title.appendChild(text);
+    var line = document.createElement("h2");
 
-     padre.appendChild(box);
- }
+    box.appendChild(title);
+    box.appendChild(line);
+    box.appendChild(div);
+    padre.appendChild(box);
+  }

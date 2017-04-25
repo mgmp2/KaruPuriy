@@ -1,0 +1,26 @@
+#info-department > div {
+  display: inline-block;
+  width: 100%;
+  margin: 2% 0;
+  border: 2px solid blue;
+  box-sizing: border-box;
+
+}
+#info-department > div > h2{
+  width: 26%;
+  padding: 1%;
+  text-align: center;
+  border: 2px solid red;
+  float: left;
+  margin-left: 2%;
+}
+
+#info-department > div > p{
+  padding: 2%;
+  width: 65%;
+  float: right;
+  border: 2px solid red;
+  box-sizing: border-box;
+  margin-right: 2%;
+}
+}
