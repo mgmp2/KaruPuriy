@@ -6,12 +6,20 @@ function ClientData(nombre, apellido, correo, contrasena, selecDestino){
   this.selecDestino = selecDestino;
 }
 
+function Registro(correoRegistro, contrasenaRegistro){
+    this.correoRegistro = correoRegistro;
+    this.contrasenaRegistro = contrasenaRegistro;
+}
+
 var name1 = document.getElementById("name");
 var lastname = document.getElementById("lastname");
 var email = document.getElementById("input-email");
 var pass = document.getElementById("input-password");
 var optionsList = document.getElementById("select-destiny");
 var allInput = document.querySelectorAll(".form-control");
+var emailSignIn = document.getElementById("email-sign-in");
+var passSignIn = document.getElementById("password-sign-in");
+
 
 var letterRegex = /^[a-zA-Z\s]*$/;
 var expRegEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
@@ -73,6 +81,15 @@ window.addEventListener("load", function(){
        parentElement.lastElementChild.style.display = "none";
      }
    });
+   
+    emailSignIn.addEventListener("input", function(){
+       validateEachInput(expRegEmail, "Ingresa el formato correcto")
+   });
+
+   passSignIn.addEventListener("input", function(){
+       validateEachInput(/\S{6}/, "Mínimo 6 carácteres")
+   });
+    
     
     for (var i = 0; i < allInput.length; i++) {
       allInput[i].addEventListener("blur", capitalLetter);
@@ -84,16 +101,23 @@ window.addEventListener("load", function(){
       var parentElement = event.target.parentNode;
       if(name1.value.trim().length == 0 || lastName.value.trim().length == 0 || email.value.trim().length == 0 || pass.value.trim().length == 0){
         createTooltip(parentElement, "Todos los campos son obligatorios.");
-      }else {
+      }else if(parentElement.lastElementChild.getAttribute("class") == "tooltiptext"){
         parentElement.lastElementChild.style.display = "none";
-        if(pass.value == "123456" || pass.value == "password" || pass.value == "098754"){
-          createTooltip(parentElement, "Elige otra contraseña");
-        }else {
-          parentElement.lastElementChild.style.display = "none";
-        }
-        localStorage.setItem("contacto", JSON.stringify(newClient));
-        // document.getElementById("client-bicis-form").reset();
+        localStorage.setItem("registroContacto", JSON.stringify(newClient));
       }
-
+    });
+    
+    document.getElementById("log-in").addEventListener("click", function(){
+        event.preventDefault();
+        var registroClient = new Registro(emailSignIn.value, passSignIn.value);
+        var parentElement = event.target.parentNode;
+        if(emailSignIn.value.trim().length == 0 || passSignIn.value.trim() == 0){
+            createTooltip(parentElement, "todos los campos son obligatorios");
+        }else if(parentElement.lastElementChild.getAttribute("class") == "tooltiptext"){
+            parentElement.lastElementChild.style.display = "none";
+            localStorage.setItem("contactos", JSON.stringify(registroClient));
+        }
     })
-})
+    
+});
+

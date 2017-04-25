@@ -4,18 +4,27 @@
 }
 
 .div-1, .div-2{
-    max-width: 26rem;
+    width: 90%;
+    height: 38rem;
+    background-color: lightcoral;
+}
+
+.div-2{
+    top: 0;
+    background: deeppink;
+    left: 0;
 }
 
 .form-sign-in-container, .btn-container-log-in{
-    position: absolute;
-    top: 0;
-    right: -17rem;
+    top: 0;;
+    right: 0;    
 }
 
 section[class^="form"], section[class^="btn-container"]{
     margin: 1rem;
-    max-width: 20rem;
+    max-width: 53rem;
+    width: 46%;
+    height: 95%;
     font-size: 1rem;
     border-radius: 1.5rem;
     padding: 2rem;
@@ -25,7 +34,7 @@ section[class^="form"], section[class^="btn-container"]{
 }
 
 .input-box{
-    margin: 1rem;
+    padding: 1rem;
 }
 
 .input-box .form-control{
@@ -37,6 +46,7 @@ section[class^="form"], section[class^="btn-container"]{
 }
 
 button[type="submit"]{
+    margin: 1rem;
     width: 100%;
     font-size: 1.5rem;
     color: #fff;
@@ -55,3 +65,22 @@ button[type="submit"]:hover{
 button[type="submit"]:active{
     opacity: 0.5;
 }
+
+.tooltiptext{
+    float: right;
+    background-color: rgb(244, 151, 172);
+    color: white;
+    font-size: 1.1rem;
+}
+
+/*.tooltiptext:before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 21px solid transparent;
+    border-right: 12px solid #FF1493;
+    border-bottom: -5px solid transparent;
+    position: absolute;
+    right: 103%;
+    top: 7px;
+}*/
