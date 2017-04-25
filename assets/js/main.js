@@ -11,13 +11,14 @@ var lastname = document.getElementById("lastname");
 var email = document.getElementById("input-email");
 var pass = document.getElementById("input-password");
 var optionsList = document.getElementById("select-destiny");
+var allInput = document.querySelectorAll(".form-control");
 
 var letterRegex = /^[a-zA-Z\s]*$/;
 var expRegEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
-  function validateEachInput(expRegular, spanText1){
+function validateEachInput(expRegular, spanText1){
     var input = event.target;
-    var parentInput = input.parentNode;w
+    var parentInput = input.parentNode;
     if(!expRegular.test(input.value)){
       createTooltip(parentInput, spanText1);
     }else if(parentInput.lastElementChild.getAttribute("class") == "tooltiptext"){
@@ -28,6 +29,7 @@ var expRegEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 function createTooltip(parentElement, messageToTooltip){
     if(parentElement.lastElementChild.getAttribute("class") =="tooltiptext"){
       parentElement.lastElementChild.innerHTML = messageToTooltip;
+      parentElement.lastElementChild.style.display = "block";
     }else{
       var span = document.createElement("span");
       span.setAttribute("class","tooltiptext");
@@ -35,6 +37,16 @@ function createTooltip(parentElement, messageToTooltip){
       parentElement.append(span);
     }
   }
+
+function capitalLetter(){
+  var inputLetter;
+  if(event.target.getAttribute("type") == "text"){
+    inputLetter = event.target.value.split(" ");
+    var mapingArr = inputLetter.map((element) => (element.charAt(0).toUpperCase() + element.substring(1, element.length).toLowerCase()));
+    event.target.value = mapingArr.toString().replace(",", " ");
+  }
+}
+
 
 window.addEventListener("load", function(){
   name1.addEventListener("input", function(){
@@ -60,7 +72,11 @@ window.addEventListener("load", function(){
      }else {
        parentElement.lastElementChild.style.display = "none";
      }
-   })
+   });
+    
+    for (var i = 0; i < allInput.length; i++) {
+      allInput[i].addEventListener("blur", capitalLetter);
+    }
 
    document.getElementById("registrar").addEventListener("click", function(){
       event.preventDefault();
