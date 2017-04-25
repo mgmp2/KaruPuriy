@@ -1,8 +1,9 @@
-function ClientData(nombre, apellido, correo, contrasena){
-  this.nombre = nombre;
-  this.contrasena = contrasena;
-  this.correo = correo;
-  this.contrasena = contrasena;
+function ClientData(nombre, apellido, correo, contrasena, comentario){
+    this.nombre = nombre;
+    this.contrasena = contrasena;
+    this.correo = correo;
+    this.contrasena = contrasena;
+    this.comentario = comentario;
 }
 
 function Registro(correoRegistro, contrasenaRegistro){
@@ -15,6 +16,7 @@ var lastname = document.getElementById("lastname");
 var email = document.getElementById("input-email");
 var pass = document.getElementById("input-password");
 var optionsList = document.getElementById("select-destiny");
+var coment = document.getElementById("coment");
 var allInput = document.querySelectorAll(".form-control");
 var emailSignIn = document.getElementById("email-sign-in");
 var passSignIn = document.getElementById("password-sign-in");
@@ -71,7 +73,7 @@ window.addEventListener("load", function(){
    pass.addEventListener("input", function(){
        validateEachInput(/\S{6}/, "Mínimo 6 carácteres")
    });
-   
+
     emailSignIn.addEventListener("input", function(){
        validateEachInput(expRegEmail, "Ingresa el formato correcto")
    });
@@ -79,24 +81,33 @@ window.addEventListener("load", function(){
    passSignIn.addEventListener("input", function(){
        validateEachInput(/\S{6}/, "Mínimo 6 carácteres")
    });
-    
-    
+
+
     for (var i = 0; i < allInput.length; i++) {
       allInput[i].addEventListener("blur", capitalLetter);
     }
 
-   document.getElementById("registrar").addEventListener("click", function(){
-      event.preventDefault();
-      var newClient = new ClientData(name.value, lastname.value, email.value, pass.value);
+    var allClients=[];
+    if(!localStorage.getItem("allClients")){
+      localStorage.setItem('allClients',JSON.stringify(allClients));
+    }
+
+   document.getElementById("registrar").addEventListener("click", function(e){
+      e.preventDefault();
+      var newClient = new ClientData(name1.value, lastname.value, email.value, pass.value, coment.value);
       var parentElement = event.target.parentNode;
-      if(name1.value.trim().length == 0 || lastname.value.trim().length == 0 || email.value.trim().length == 0 || pass.value.trim().length == 0){
+      if(name1.value.trim().length == 0 || lastname.value.trim().length == 0 || email.value.trim().length == 0 || pass.value.trim().length == 0 || coment.value.trim().length == 0){
         createTooltip(parentElement, "Todos los campos son obligatorios.");
-      }else if(parentElement.lastElementChild.getAttribute("class") == "tooltiptext"){
-        parentElement.lastElementChild.style.display = "none";
-        localStorage.setItem("registroContacto", JSON.stringify(newClient));
+      }else {
+        allClients.push(newClient);
+        console.log(allClients);
+        localStorage.setItem("allClients",JSON.stringify(allClients));
+        var x = JSON.parse(localStorage.getItem("allClients"));
+        if(parentElement.lastElementChild.getAttribute("class") == "tooltiptext"){
+            parentElement.lastElementChild.style.display = "none";}
       }
     });
-    
+
     document.getElementById("log-in").addEventListener("click", function(){
         event.preventDefault();
         var registroClient = new Registro(emailSignIn.value, passSignIn.value);
@@ -108,6 +119,5 @@ window.addEventListener("load", function(){
             localStorage.setItem("contactos", JSON.stringify(registroClient));
         }
     })
-    
-});
 
+});

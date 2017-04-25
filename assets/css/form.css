@@ -14,8 +14,7 @@ section[class^="form"], section[class^="btn-container"]{
     width: 46%;
     font-size: 1rem;
     border-radius: 1.5rem;
-    padding: 2rem;
-    padding-top: 3rem;
+    padding: 1.5rem;
     background-color: #DADADA;
     box-shadow: 0.3rem 0.3rem 1rem black;
 }
