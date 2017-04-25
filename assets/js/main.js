@@ -6,7 +6,7 @@ function ClientData(nombre, apellido, correo, contrasena, comentario){
     this.comentario = comentario;
 }
 
-function Registro(correoRegistro, contrasenaRegistro){
+function ToSignIn(correoRegistro, contrasenaRegistro){
     this.correoRegistro = correoRegistro;
     this.contrasenaRegistro = contrasenaRegistro;
 }
@@ -88,8 +88,12 @@ window.addEventListener("load", function(){
     }
 
     var allClients=[];
+    var signIn = [];
     if(!localStorage.getItem("allClients")){
       localStorage.setItem('allClients',JSON.stringify(allClients));
+    }
+    if(!localStorage.getItem("signIn")){
+      localStorage.setItem("signIn",JSON.stringify(signIn));
     }
 
    document.getElementById("registrar").addEventListener("click", function(e){
@@ -99,24 +103,27 @@ window.addEventListener("load", function(){
       if(name1.value.trim().length == 0 || lastname.value.trim().length == 0 || email.value.trim().length == 0 || pass.value.trim().length == 0 || coment.value.trim().length == 0){
         createTooltip(parentElement, "Todos los campos son obligatorios.");
       }else {
-        allClients.push(newClient);
+        allClients.unshift(newClient);
         console.log(allClients);
         localStorage.setItem("allClients",JSON.stringify(allClients));
-        var x = JSON.parse(localStorage.getItem("allClients"));
         if(parentElement.lastElementChild.getAttribute("class") == "tooltiptext"){
             parentElement.lastElementChild.style.display = "none";}
       }
     });
 
-    document.getElementById("log-in").addEventListener("click", function(){
-        event.preventDefault();
-        var registroClient = new Registro(emailSignIn.value, passSignIn.value);
+    document.getElementById("log-in").addEventListener("click", function(e, showUser){
+        e.preventDefault();
+        var regToSignIn = new ToSignIn(emailSignIn.value, passSignIn.value);
         var parentElement = event.target.parentNode;
         if(emailSignIn.value.trim().length == 0 || passSignIn.value.trim() == 0){
             createTooltip(parentElement, "todos los campos son obligatorios");
-        }else if(parentElement.lastElementChild.getAttribute("class") == "tooltiptext"){
-            parentElement.lastElementChild.style.display = "none";
-            localStorage.setItem("contactos", JSON.stringify(registroClient));
+        }else{
+          signIn.unshift(regToSignIn);
+          console.log(signIn);
+          localStorage.setItem("toSignIn", JSON.stringify(signIn));
+          if(parentElement.lastElementChild.getAttribute("class") == "tooltiptext"){
+                parentElement.lastElementChild.style.display = "none";}
+          userLS();
         }
     })
 
