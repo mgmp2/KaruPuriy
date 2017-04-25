@@ -19,11 +19,11 @@ var lastScrollTop = 0;
 
 
 
- var arrayDep =   [{nombre: "Cajamarca", description: "cajamarca jajajajaja :v "}];
-                    //  {nombre: "Tumbes", description: "cajamarca jajajajaja :v "},
-                    //  {nombre: "Piura", description: "cajamarca jajajajaja :v "},
-                    //  {nombre: "Chiclayo", description: "cajamarca jajajajaja :v "},
-                    //  {nombre: "Trujillo", description: "cajamarca jajajajaja :v "}];
+ var arrayDep =   [{nombre: "Cajamarca", description: "cajamarca jajajajaja :v "},
+                     {nombre: "Tumbes", description: "cajamarca jajajajaja :v "},
+                     {nombre: "Piura", description: "cajamarca jajajajaja :v "},
+                     {nombre: "Chiclayo", description: "cajamarca jajajajaja :v "},
+                     {nombre: "Trujillo", description: "cajamarca jajajajaja :v "}];
  window.addEventListener("load", function (e){
    e.preventDefault();
    for (var i = 0; i < arrayDep.length; i++) {
@@ -38,21 +38,20 @@ var lastScrollTop = 0;
           div.classList.add("box-"+nombre);
     var divImg = document.createElement("div");
           divImg.classList.add("box-img");
+          divImg.addEventListener("mouseenter", function(){divImg.classList.add("animation")});
+          divImg.addEventListener("mouseout", function(){divImg.classList.remove("animation")});
 
      var img;
      for(var i = 1 ; i < 5; i++){
-       var arrayImg = [{}];
-       arrayImg.push("assets/img/"+nombre+"/img-0"+i+".jpg");
-       console.log(arrayImg);
        img = document.createElement("img");
-       img.addEventListener("mouseenter", function(e){
-         img.classList.add("none");
-         console.log(e);
-       })
+
        img.setAttribute("src", "assets/img/"+nombre+"/img-0"+i+".jpg");
        img.setAttribute("alt",nombre+"-"+i);
+
        divImg.appendChild(img);
      }
+    //  var spanColor = document.createElement("span");
+    //  divImg.appendChild(spanColor);
      var span = document.createElement("span");
      var text = document.createTextNode(nombre);
      var desc = document.createTextNode(descripcion);
