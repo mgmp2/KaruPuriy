@@ -4,51 +4,142 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>  </title>
+  <title> Proyecto X </title>
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/dept.css">
+  <link rel="stylesheet" href="assets/css/infDep.css">
+  <link rel="icon" href="assets/img/coder.png">
 </head>
 <body>
-  <section class="sign-up-log-in relative">
-      <section class="form-sign-up-container in-block">
-        <form class="form-signup" id="signup-box">
-          <h2 id="form-signup-heading">
-            REGISTRE SUS DATOS
-          </h2>
-          <div class="input-box">
-            <input type="text" id="name" class="form-control" placeholder="Ingrese su nombre">
-          </div>
-          <div class="input-box">
-            <input type="text" id="lastname" class="form-control" placeholder="Ingrese su apellido">
-          </div>
-          <div class="input-box">
-            <input type="email" id="input-email" class="form-control" placeholder="Ingrese su correo electrónico">
-          </div>
-          <div class="input-box">
-            <input type="password" id="input-password" class="form-control" placeholder="Ingrese su contraseña">
-          </div>
-          <div class="input-box">
-            <textarea class="form-control" id="coment" rows="8" placeholder="Ingresa tu comentario"></textarea>
-          </div>
-          <button id="registrar" class="submit-btn" type="submit">Registrar</button>
-        </form>
-      </section>
+    <header>
+    <nav id="nav-header" class="header">
+      <div id="box-header" >
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotras">Nosotras</a></li>
+          <li><a href="#servicio">Servicios</a></li>
+          <li><a href="#departamento" id="destino">Destino</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+   </nav>
+  </header>
+    <div class="box-container">
+        <section id="inicio"></section>
+        <section id="nosotras">
+          <p>Miriam Mendoza Pilco</p>
+          <p>Elizabeth Condori</p>
+        </section>
+        <section id="servicio">
+          <p>te ofrecemos :v</p>
+          <!-- lo que te ofrece el servicio -->
+        </section>
+        <section id="departamento">
+        <!-- nuevos div's -->
+          <div id="info-department">
+            <div class="first">
+              <h2>¿Cómo llegar?</h2>
+              <article>
+                <table>
+                  <tr>
+                    <th>Salida</th>
+                    <th>Llegada</th>
+                    <th>Duración</th>
+                    <th>Precio</th>
+                  </tr>
+                  <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                    <td>$100</td>
+                  </tr>
+                  <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                    <td>$150</td>
+                  </tr>
+                  <tr>
+                    <td>Joe</td>
+                    <td>Swanson</td>
+                    <td>$300</td>
+                  </tr>
+                  <tr>
+                    <td>Cleveland</td>
+                    <td>Brown</td>
+                    <td>$250</td>
+                </tr>
+              </table>
 
-    <section class="form-sign-in-container in-block absolute">
-        <form class="form-signin">
-          <h2 id="form-signin-heading">
-            Por favor Inicie Sesión
-          </h2>
-          <div class="input-box">
-            <input type="email" id="email-sign-in" class="form-control" placeholder="example@domain.com" autofocus="">
+            </article>
+            </div>
+            <div class="second">
+              <h2>¿Qué hacer?</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="third">
+              <h2>¿Donde quedarse?</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="fourth">
+              <h2>¿Qué comer?</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="fifth">
+              <h2>¿Qué te llevas?</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
           </div>
-          <div class="input-box">
-            <input type="password" id="password-sign-in" class="form-control" placeholder="Contraseña">
-          </div>
-          <button type="submit" class="log-in" id="log-in">Inicia sesión</button>
-        </form>
+        </section>
+        <section id="contacto">
+          <p>Contactame</p>
+        </section>
+    </div>
+    <section class="sign-up-log-in relative">
+        <section class="form-sign-up-container in-block">
+          <form class="form-signup" id="signup-box">
+            <h2 id="form-signup-heading">
+              REGISTRE SUS DATOS
+            </h2>
+            <div class="input-box">
+              <input type="text" id="name" class="form-control" placeholder="Ingrese su nombre">
+            </div>
+            <div class="input-box">
+              <input type="text" id="lastname" class="form-control" placeholder="Ingrese su apellido">
+            </div>
+            <div class="input-box">
+              <input type="email" id="input-email" class="form-control" placeholder="Ingrese su correo electrónico">
+            </div>
+            <div class="input-box">
+              <input type="password" id="input-password" class="form-control" placeholder="Ingrese su contraseña">
+            </div>
+            <div class="input-box">
+              <textarea class="form-control" id="coment" rows="8" placeholder="Ingresa tu comentario"></textarea>
+            </div>
+            <button id="registrar" class="submit-btn" type="submit">Registrar</button>
+          </form>
+        </section>
+
+      <section class="form-sign-in-container in-block absolute">
+          <form class="form-signin">
+            <h2 id="form-signin-heading">
+              Por favor Inicie Sesión
+            </h2>
+            <div class="input-box">
+              <input type="email" id="email-sign-in" class="form-control" placeholder="example@domain.com" autofocus="">
+            </div>
+            <div class="input-box">
+              <input type="password" id="password-sign-in" class="form-control" placeholder="Contraseña">
+            </div>
+            <button type="submit" class="log-in" id="log-in">Inicia sesión</button>
+          </form>
+        </section>
       </section>
-    </section>
-  <script type="text/javascript" src="assets/js/main.js"></script>
-  <script type="text/javascript" src="assets/js/userLS.js"></script>
+  <footer>
+
+ </footer>
+ <script type="text/javascript" src="assets/js/userLS.js"></script>
+ <script type="text/javascript" src="assets/js/main.js"></script>
+ <script type="text/javascript" src="assets/js/funcionAparecer.js"></script>
+
 </body>
 </html>
