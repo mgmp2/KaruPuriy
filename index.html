@@ -9,59 +9,31 @@
 </head>
 <body>
   <section class="sign-up-log-in relative">
-    <div class="div-1 absolute" id="div-1">
       <section class="form-sign-up-container in-block">
         <form class="form-signup" id="signup-box">
           <h2 id="form-signup-heading">
             REGISTRE SUS DATOS
           </h2>
           <div class="input-box">
-            <label for="name" class="sr-only">Nombre</label>
             <input type="text" id="name" class="form-control" placeholder="Ingrese su nombre">
           </div>
           <div class="input-box">
-            <label for="lastname" class="sr-only">Apellido</label>
             <input type="text" id="lastname" class="form-control" placeholder="Ingrese su apellido">
           </div>
           <div class="input-box">
-            <label for="input-email" class="sr-only">Correo Electrónico</label>
             <input type="email" id="input-email" class="form-control" placeholder="Ingrese su correo electrónico">
           </div>
           <div class="input-box">
-            <label for="input-password" class="sr-only">Contraseña</label>
             <input type="password" id="input-password" class="form-control" placeholder="Ingrese su contraseña">
           </div>
           <div class="input-box">
-            <select class="form-control" id="select-destiny">
-              <option value="0">Selecciona destino</option>
-              <option value="tumbes">Tumbes</option>
-              <option value="Piura">Piura</option>
-              <option value="Chiclayo">Chiclayo</option>
-              <option value="trujillo">Trujillo</option>
-              <option value="Cajamarca">Cajamarca</option>
-            </select>
+            <textarea name="coment" id="coment" cols="30" rows="10" placeholder="Ingresa tu comentario"></textarea>
           </div>
           <button id="registrar" class="submit-btn" type="submit">Registrar</button>
         </form>
       </section>
 
-      <section class="btn-container-log-in in-block absolute">
-        <div>
-          <h2>¿Ya estas registrado?</h2>
-        </div>
-        <button type="submit" id="button-log-in-right">Inicia sesión</button>
-      </section>
-    </div>
-
-    <div class="div-2 absolute" id="div-2">
-      <section class="btn-container-sign-up in-block">
-        <div>
-          <h2>¿Esta por peimera vez aquí?</h2>
-        </div>
-        <div><button type="submit" id="button-sign-up-left">Regístrate</button></div>
-      </section>
-      
-      <section class="form-sign-in-container in-block absolute">
+    <section class="form-sign-in-container in-block absolute">
         <form class="form-signin">
           <h2 id="form-signin-heading">
             Por favor Inicie Sesión
@@ -76,7 +48,6 @@
         </form>
       </section>
     </section>
-  </div>
   <script type="text/javascript" src="assets/js/main.js">
 
   </script>

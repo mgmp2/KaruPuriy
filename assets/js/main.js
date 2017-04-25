@@ -1,9 +1,8 @@
-function ClientData(nombre, apellido, correo, contrasena, selecDestino){
+function ClientData(nombre, apellido, correo, contrasena){
   this.nombre = nombre;
   this.contrasena = contrasena;
   this.correo = correo;
   this.contrasena = contrasena;
-  this.selecDestino = selecDestino;
 }
 
 function Registro(correoRegistro, contrasenaRegistro){
@@ -72,15 +71,6 @@ window.addEventListener("load", function(){
    pass.addEventListener("input", function(){
        validateEachInput(/\S{6}/, "Mínimo 6 carácteres")
    });
-
-   optionsList.addEventListener("blur", function(){
-     var parentElement = event.target.parentNode;
-     if(optionsList.selectedIndex == 0){
-       createTooltip(parentElement, "Selecciona una opción");
-     }else {
-       parentElement.lastElementChild.style.display = "none";
-     }
-   });
    
     emailSignIn.addEventListener("input", function(){
        validateEachInput(expRegEmail, "Ingresa el formato correcto")
@@ -97,9 +87,9 @@ window.addEventListener("load", function(){
 
    document.getElementById("registrar").addEventListener("click", function(){
       event.preventDefault();
-      var newClient = new ClientData(name.value, lastname.value, email.value, pass.value, optionsList.options[optionsList.selectedIndex].text);
+      var newClient = new ClientData(name.value, lastname.value, email.value, pass.value);
       var parentElement = event.target.parentNode;
-      if(name1.value.trim().length == 0 || lastName.value.trim().length == 0 || email.value.trim().length == 0 || pass.value.trim().length == 0){
+      if(name1.value.trim().length == 0 || lastname.value.trim().length == 0 || email.value.trim().length == 0 || pass.value.trim().length == 0){
         createTooltip(parentElement, "Todos los campos son obligatorios.");
       }else if(parentElement.lastElementChild.getAttribute("class") == "tooltiptext"){
         parentElement.lastElementChild.style.display = "none";

@@ -3,18 +3,6 @@
   margin: auto;
 }
 
-.div-1, .div-2{
-    width: 90%;
-    height: 38rem;
-    background-color: lightcoral;
-}
-
-.div-2{
-    top: 0;
-    background: deeppink;
-    left: 0;
-}
-
 .form-sign-in-container, .btn-container-log-in{
     top: 0;;
     right: 0;    
@@ -24,7 +12,6 @@ section[class^="form"], section[class^="btn-container"]{
     margin: 1rem;
     max-width: 53rem;
     width: 46%;
-    height: 95%;
     font-size: 1rem;
     border-radius: 1.5rem;
     padding: 2rem;
@@ -66,6 +53,9 @@ button[type="submit"]:active{
     opacity: 0.5;
 }
 
+.sr-only{
+    font-weight: bolder;
+}
 .tooltiptext{
     float: right;
     background-color: rgb(244, 151, 172);
