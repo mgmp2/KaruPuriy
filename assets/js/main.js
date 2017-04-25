@@ -19,7 +19,7 @@ var lastScrollTop = 0;
 
 
 
- var arrayDep =   [{nombre: "Cajamarca", description: "cajamarca jajajajaja :v "},
+ var arrayDep =   [{nombre: "Cajamarca", description: "cajamarca jajajajaja :v "}];
                      {nombre: "Tumbes", description: "cajamarca jajajajaja :v "},
                      {nombre: "Piura", description: "cajamarca jajajajaja :v "},
                      {nombre: "Chiclayo", description: "cajamarca jajajajaja :v "},

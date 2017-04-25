@@ -136,8 +136,7 @@ margin: 0 auto;
     font-weight: bold;
 }
 .animation {
-  animation: change 10s infinite;
-  animation-direction: alternate;
+  animation: change 5s infinite step-start alternate;
 }
 
 @keyframes change {
@@ -152,9 +151,7 @@ margin: 0 auto;
 
   75%{margin-left: -300%;}
   100%{margin-left: -300%;}
-
-
-}
+};
 
 /*footer*/
 footer {
