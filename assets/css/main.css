@@ -1,4 +1,6 @@
+@import url("../icon/style.css");
 @import url("form.css");
+@import url("footer.css");
 
 *{
     padding: 0;
@@ -86,13 +88,4 @@ a:hover{
   height: 600px;
   background-size: cover;
   position: relative;
-}
-
-
-
-/*footer*/
-footer {
-  background-color: rgba(28, 4, 38, .8);
-    padding: 3em .5em;
-    color: #ccc;
 }

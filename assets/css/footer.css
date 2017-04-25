@@ -1,0 +1,16 @@
+footer {
+    background-color: rgba(28, 4, 38, .8);
+    color: #ccc;
+    width: 100%;
+}
+
+.content-footer{
+  width: 70%;
+  margin: auto;
+}
+
+.content-footer section{
+    max-width: 18rem;
+    width: 20%;
+    text-align: center;
+}
