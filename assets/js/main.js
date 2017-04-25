@@ -19,16 +19,15 @@ var lastScrollTop = 0;
 
 
 
- var styleCoder =   [{nombre: "Naomi Villanueva", url: "assets/img/students/1.png"},
-                     {nombre: "Ana Durand", url: "assets/img/students/2.png"},
-                     {nombre: "Betsi Loayza", url: "assets/img/students/3.png"},
-                     {nombre: "Maia Rojas", url: "assets/img/students/4.png"},
-                     {nombre: "Miriam Mendoza", url: "assets/img/students/5.png"},
-                     {nombre: "Neiza Nuñez", url: "assets/img/students/6.png"}];
+ var arrayDep =   [{nombre: "Cajamarca", description: "cajamarca jajajajaja :v "},
+                     {nombre: "Tumbes", description: "cajamarca jajajajaja :v "},
+                     {nombre: "Piura", description: "cajamarca jajajajaja :v "},
+                     {nombre: "Chiclayo", description: "cajamarca jajajajaja :v "},
+                     {nombre: "Trujillo", description: "cajamarca jajajajaja :v "}];
  window.addEventListener("load", function (e){
    e.preventDefault();
-   for (var i = 0; i < styleCoder.length; i++) {
-     createCoders(styleCoder[i].nombre, styleCoder[i].url);
+   for (var i = 0; i < arrayDep.length; i++) {
+     createCoders(arrayDep[i].nombre, arrayDep[i].url);
    }
    createtitle(dcf, document.getElementById("departamento"));
  });
@@ -50,16 +49,19 @@ var lastScrollTop = 0;
      dcf.appendChild(div);
  }
  function createtitle(dcf,padre){
-   console.log(padre);
-     var section = document.createElement("div");
-       section.classList.add("box-departament");
-     section.appendChild(dcf);
+   var box = document.createElement("div");
+       box.classList.add("box-departament");
+     var div = document.createElement("div");
+       div.classList.add("box-picture");
+     div.appendChild(dcf);
      var title = document.createElement("h1");
-     var text = document.createTextNode("StyleCoder");
+     var text = document.createTextNode("arrayDep");
          title.appendChild(text);
      var line = document.createElement("h2");
-     padre.appendChild(title);
-     console.log(title);
-     padre.appendChild(line);
-     padre.appendChild(section);
+
+     box.appendChild(title);
+     box.appendChild(line);
+     box.appendChild(div);
+
+     padre.appendChild(box);
  }

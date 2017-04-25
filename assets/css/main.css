@@ -1,15 +1,18 @@
+body{
+  margin: 0;
+  }
 header > nav {
-top: 0;
-left: 0;
-width: 100%;
-height: 49px;
-margin-top: 0;
-position: fixed;
-padding-top: 0px;
-background: none;
-background-color: rgba(255, 255, 255, 0);
-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
-z-index: 1
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 49px;
+  margin-top: 0;
+  position: fixed;
+  padding-top: 0px;
+  background: none;
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+  z-index: 1;
 }
 
 #box-header {
@@ -54,8 +57,8 @@ a:hover{
   padding-right: 14px;
   box-sizing: border-box;
 }
-/*sección general*/
-#general {
+/*sección inicio*/
+#inicio {
 
   background: linear-gradient(rgba(184, 141, 162, 0.51),rgba(34, 176, 48, 0.49)),url(../img/fondo.jpeg);
   background-repeat: no-repeat;
@@ -83,7 +86,11 @@ a:hover{
 #departamento:after {
     clear: both;
 }
-.box-departament >  div {
+#departamento > div{
+  width: 90%;
+margin: 0 auto;
+}
+.box-picture >  div {
   width: 30%;
   height: 350px;
   position: relative;
@@ -100,13 +107,13 @@ img{
   height: 210px;
 }
 
-.box-departament > div > span:nth-child(1) {
+.box-picture > div > span:nth-child(1) {
   width: 210px;
   height: 210px;
   background: rgba(114, 142, 155, 0.27);
   position: absolute;
 }
-.box-departament > div > span:nth-child(1):hover{
+.box-picture > div > span:nth-child(1):hover{
   background: rgba(114, 142, 155, 0);
 }
 
@@ -115,4 +122,10 @@ div > .nombre {
   bottom: 9%;
   color: white;
   position: absolute;
+}
+/*footer*/
+footer {
+  background-color: rgba(28, 4, 38, .8);
+    padding: 3em .5em;
+    color: #ccc;
 }
