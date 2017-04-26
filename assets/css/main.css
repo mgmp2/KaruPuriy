@@ -39,6 +39,17 @@ a{
     position: absolute;
 }
 
+
+video{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+}
+
 header{
   width: 100%;
 }
@@ -137,33 +148,39 @@ nav a:active{
 }
 
 .text-animation{
-    position: absolute;
-    height: 3rem;
-    font-size: 3rem;
-    top: 18rem;
-    overflow: hidden;
-    border-right: .15em solid orange;
-    margin: 0 auto;
-    letter-spacing: .15em;
-    animation: typing 5s steps(60, end) infinite alternate;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 4em;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  margin: auto;
+  display: block;
+  -webkit-animation: up-dowm .3s ease infinite alternate;
+
+  color: #FFF;
+  text-align: center;
+  line-height: 100px;
+
 }
 
-@keyframes typing {
-  0%{ width: 0 }
-  50%{width: 50%}
-  100%{ width: 100% }
-}
+@-webkit-keyframes up-dowm{
+  0%{
+    top: 0;
+    text-shadow: 0 1px 0 #CCC,
+                 0 2px 0 #CCC,
+                 0 10px 10px rgba(0, 0, 0, .6);
+  }
 
-video{
-    position: fixed;
-    min-width: 100%;
-    min-height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: -100;
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #CCC,
+                 0 2px 0 #CCC,
+                 0 30px 30px rgba(0, 0, 0, .3);
+  }
 }
-
 /*nosotras*/
 #nosotras > h4 {
   font-size: 25px;
