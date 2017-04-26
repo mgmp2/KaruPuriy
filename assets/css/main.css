@@ -7,6 +7,8 @@
   *{
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+
   }
 
 
@@ -19,11 +21,10 @@
   html, body{
     margin: 0;
     height: 100%;
-    font-family: 'Merriweather', serif;
   }
 
   h4, h3, h1{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Fjalla One', sans-serif
   }
 
   a{
@@ -172,7 +173,7 @@
   /*nosotras*/
   #nosotras > h4 {
     font-size: 25px;
-    color: red;
+    color: rgba(77, 73, 61, 0.75);
     text-align: center;
   }
   .box-nosotras {
