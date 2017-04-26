@@ -1,6 +1,5 @@
     var dcf = document.createDocumentFragment();
     var mainTitle = document.createElement("h2");
-    var fir = document.getElementById("first");
     var sec = document.getElementById("second");
     var thr = document.getElementById("third");
     var fot = document.getElementById("fourth");
@@ -200,28 +199,34 @@
             if(!sec.children && !thr.children && !fot.children && !fth.children){
               secondInf(index,nombre);
               thirdInf(index,nombre);
-              fourthInf (index,nombre);
-              fifthInf(index,nombre);
-            } else {
-                sec.removeChild(sec.lastChild);
-                thr.removeChild(thr.lastChild);
-                fot.removeChild(fot.lastChild);
-                fth.removeChild(fth.lastChild);
+               fourthInf (index,nombre);
+               fifthInf(index,nombre);
 
-                secondInf(index,nombre);
-                thirdInf(index,nombre);
+            }
+             else {
+               sec.removeChild(sec.lastChild);
+               thr.removeChild(thr.lastChild);
+               fot.removeChild(fot.lastChild);
+               fth.removeChild(fth.lastChild);
+
+               secondInf(index,nombre);
+               thirdInf(index,nombre);
                 fourthInf (index,nombre);
                 fifthInf(index,nombre);
+
              }
             (document.getElementById("box-departament")).classList.add("disappear");
             (document.getElementById("info-department")).classList.remove("disappear");
+
+
           });
-        var masInfo = document.createTextNode("Más información");
-            masInf.appendChild(masInfo);
+          var masInfo = document.createTextNode("Más información");
+               masInf.appendChild(masInfo);
 
        div.appendChild(divImg);
        div.appendChild(span);
        div.appendChild(nameDept);
        div.appendChild(masInf);
+
        dcf.appendChild(div);
      }
