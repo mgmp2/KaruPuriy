@@ -23,19 +23,60 @@
                                   {salida:"6:00 p.m", llegada: "8:50", duracion: "15h", precio: "S/.100/120"},
                                   {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
                                   {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"}],
-                      segundoPaso: [{url: "assets/img/Cajamarca/queHacer/img-01.jpg", nombre: "Bahia"},
-                                    {url: "assets/img/Cajamarca/queHacer/img-02.jpg", nombre: "Bahia"},
-                                    {url: "assets/img/Cajamarca/queHacer/img-03.jpg", nombre: "Bahia"}],
+                      segundoPaso: [{url: "assets/img/Cajamarca/queHacer/img-01.jpg", nombre: "Cajamar"},
+                                    {url: "assets/img/Cajamarca/queHacer/img-02.jpg", nombre: "Cajamar"},
+                                    {url: "assets/img/Cajamarca/queHacer/img-03.jpg", nombre: "Cajamar"}],
                       tercerPaso: [{url: "assets/img/Cajamarca/hotel/img-01.jpg", nombreHotel: "PRIMERhoTEL"}],
                       cuartoPaso: [{url: "assets/img/Cajamarca/plato/img-01.jpg", plato:"adjkj"}]
                       },
-                     {nombre: "Tumbes", description: "cajamarca jajajajaja :v "},
-                     {nombre: "Piura", description: "cajamarca jajajajaja :v "},
-                     {nombre: "Chiclayo", description: "cajamarca jajajajaja :v "},
-                     {nombre: "Trujillo", description: "cajamarca jajajajaja :v "}];
+                     {nombre: "Tumbes", description: "cajamarca jajajajaja :v ",
+                     primerPaso: [{salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
+                                 {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
+                                 {salida:"6:00 p.m", llegada: "8:50", duracion: "15h", precio: "S/.100/120"},
+                                 {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
+                                 {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"}],
+                     segundoPaso: [{url: "assets/img/Cajamarca/queHacer/img-01.jpg", nombre: "Tumbes"},
+                                   {url: "assets/img/Cajamarca/queHacer/img-02.jpg", nombre: "Tumbes"},
+                                   {url: "assets/img/Cajamarca/queHacer/img-03.jpg", nombre: "Tumbes"}],
+                     tercerPaso: [{url: "assets/img/Cajamarca/hotel/img-01.jpg", nombreHotel: "PRIMERhoTEL"}],
+                     cuartoPaso: [{url: "assets/img/Cajamarca/plato/img-01.jpg", plato:"adjkj"}]
+                     },
+                     {nombre: "Piura", description: "cajamarca jajajajaja :v ",
+                     primerPaso: [{salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
+                                 {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
+                                 {salida:"6:00 p.m", llegada: "8:50", duracion: "15h", precio: "S/.100/120"},
+                                 {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
+                                 {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"}],
+                     segundoPaso: [{url: "assets/img/Cajamarca/queHacer/img-01.jpg", nombre: "Piura"},
+                                   {url: "assets/img/Cajamarca/queHacer/img-02.jpg", nombre: "Piura"},
+                                   {url: "assets/img/Cajamarca/queHacer/img-03.jpg", nombre: "Piura"}],
+                     tercerPaso: [{url: "assets/img/Cajamarca/hotel/img-01.jpg", nombreHotel: "PRIMERhoTEL"}],
+                     cuartoPaso: [{url: "assets/img/Cajamarca/plato/img-01.jpg", plato:"adjkj"}]
+                     },
+                     {nombre: "Chiclayo", description: "cajamarca jajajajaja :v ",
+                     primerPaso: [{salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
+                                 {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
+                                 {salida:"6:00 p.m", llegada: "8:50", duracion: "15h", precio: "S/.100/120"},
+                                 {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
+                                 {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"}],
+                     segundoPaso: [{url: "assets/img/Cajamarca/queHacer/img-01.jpg", nombre: "Chiclayo"},
+                                   {url: "assets/img/Cajamarca/queHacer/img-02.jpg", nombre: "Chiclayo"},
+                                   {url: "assets/img/Cajamarca/queHacer/img-03.jpg", nombre: "Chiclayo"}],
+                     tercerPaso: [{url: "assets/img/Cajamarca/hotel/img-01.jpg", nombreHotel: "PRIMERhoTEL"}],
+                     cuartoPaso: [{url: "assets/img/Cajamarca/plato/img-01.jpg", plato:"adjkj"}]
+                     },
+                     {nombre: "Trujillo", description: "cajamarca jajajajaja :v ",primerPaso: [{salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
+                                 {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
+                                 {salida:"6:00 p.m", llegada: "8:50", duracion: "15h", precio: "S/.100/120"},
+                                 {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
+                                 {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"}],
+                     segundoPaso: [{url: "assets/img/Cajamarca/queHacer/img-01.jpg", nombre: "Trujillo"},
+                                   {url: "assets/img/Cajamarca/queHacer/img-02.jpg", nombre: "Trujillo"},
+                                   {url: "assets/img/Cajamarca/queHacer/img-03.jpg", nombre: "Trujillo"}],
+                     tercerPaso: [{url: "assets/img/Cajamarca/hotel/img-01.jpg", nombreHotel: "PRIMERhoTEL"}],
+                     cuartoPaso: [{url: "assets/img/Cajamarca/plato/img-01.jpg", plato:"adjkj"}]
+                   }];
 
-                     console.log(arrayDep[0].primerPaso.length);
-                     console.log(arrayDep[0].segundoPaso);
 
   window.addEventListener("load", function(e){
    e.preventDefault();
