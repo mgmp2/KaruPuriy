@@ -27,7 +27,6 @@
 }
 
 button[type="submit"]{
-    margin: 1rem;
     width: 65%;
     font-size: 1.5rem;
     color: #fff;
@@ -55,16 +54,19 @@ button[type="submit"]:active{
     background-color: rgb(244, 151, 172);
     color: white;
     font-size: 1.1rem;
+    position: absolute;
+    left: 10rem;
+    bottom: 0;
+    padding: 0.1rem;
 }
 
-/*.tooltiptext:before{
+.tooltiptext::after {
     content: "";
-    width: 0;
-    height: 0;
-    border-top: 21px solid transparent;
-    border-right: 12px solid #FF1493;
-    border-bottom: -5px solid transparent;
     position: absolute;
-    right: 103%;
-    top: 7px;
-}*/
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgb(244, 151, 172) transparent;
+}
