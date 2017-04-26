@@ -1,7 +1,3 @@
-/*seccion de departamento*/
-#departamento {
-  background: purple;
-}
 
 #departamento:before, #departamento:after {
     content: " ";

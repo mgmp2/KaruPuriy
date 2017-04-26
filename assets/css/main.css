@@ -30,7 +30,7 @@ html, body{
 }
 
 header{
-  width: 100%;  
+  width: 100%;
 }
 
 header > nav {
@@ -89,18 +89,19 @@ a:hover{
 
 .box-container {
   width: 85%;
-  background-color: rgb(56, 131, 170);
-  margin: 0 auto;
+  background-color: rgba(128, 195, 27, 0.5);
+  padding: 1rem;
+  margin: auto;
 }
 
 
 .box-container > section {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 90%;
+  margin: 2rem auto;
   padding-left: 14px;
   padding-right: 14px;
   box-sizing: border-box;
+  background-color: rgba(1, 117, 142, 0.5);
 }
 /*sección inicio*/
 #inicio {
@@ -129,8 +130,9 @@ a:hover{
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  0%{ width: 0 }
+  50%{width: 50%}
+  100%{ width: 100% }
 }
 
 video{
