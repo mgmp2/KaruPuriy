@@ -1,0 +1,43 @@
+footer {
+    background-color: rgba(28, 4, 38, .8);
+    color: #ccc;
+    width: 100%;
+}
+
+.content-footer{
+  width: 90%;
+  margin: auto;
+}
+
+.content-footer section{
+    max-width: 18rem;
+    width: 24%;
+    text-align: center;
+}
+
+.redes, .payment{
+    position: relative;
+    top: -2rem;
+}
+.redes span, .payment span{
+    margin: 0 0.2rem;
+}
+
+/*redes fixed*/
+.redes-fix{
+    padding: 1rem 0 1rem 1rem;
+    position: fixed;
+    top: 30%;
+    right: 0rem;
+    z-index: 1000;
+}
+
+.redes-fix span{
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+    color: yellowgreen;
+}
+
+.redes-fix a, .redes a{
+    padding: 0;
+}

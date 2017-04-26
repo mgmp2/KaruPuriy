@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?ujeala');
+  src:  url('fonts/icomoon.eot?ujeala#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ujeala') format('truetype'),
+    url('fonts/icomoon.woff?ujeala') format('woff'),
+    url('fonts/icomoon.svg?ujeala#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 2rem;
+  cursor: pointer;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-map-marker:before {
+  content: "\f041";
+}
+.icon-twitter-square:before {
+  content: "\f081";
+}
+.icon-facebook-square:before {
+  content: "\f082";
+}
+.icon-phone:before {
+  content: "\f095";
+}
+.icon-google-plus-square:before {
+  content: "\f0d4";
+}
+.icon-youtube-play:before {
+  content: "\f16a";
+}
+.icon-cc-visa:before {
+  content: "\f1f0";
+}
+.icon-cc-mastercard:before {
+  content: "\f1f1";
+}
+.icon-cc-paypal:before {
+  content: "\f1f4";
+}
+.icon-pinterest-p:before {
+  content: "\f231";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}

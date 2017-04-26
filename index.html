@@ -8,22 +8,25 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/dept.css">
   <link rel="stylesheet" href="assets/css/infDep.css">
-  <link rel="icon" href="assets/img/coder.png">
-  <link href="https://fonts.googleapis.com/css?family=Eagle+Lake|Fjalla+One" rel="stylesheet">
+  <link rel="icon" href="assets/img/logo.jpg">
 </head>
 <body>
+  <video id="video-inicio" src="assets/video/cajamarca.mp4" autoplay loop muted></video>
   <header>
-      <nav id="nav-header" class="header">
-        <div id="box-header" >
-          <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#nosotras">Nosotras</a></li>
-            <li><a href="#servicio">Servicios</a></li>
-            <li><a href="#departamento" id="destino">Destino</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-        </div>
-      </nav>
+    <nav id="nav-header" class="header">
+      <div class="logo in-block">
+        <img src="assets/img/logo.JPG" alt="logo">
+      </div>
+      <div id="box-header" class="in-block relative" >
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotras">Nosotras</a></li>
+          <li><a href="#servicio">Servicios</a></li>
+          <li><a href="#departamento" id="destino">Destino</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
     <div class="box-container">
         <section id="inicio"></section>
@@ -89,41 +92,95 @@
                 </tr>
               </table>
 
-            </article>
-            </div>
-            <!-- Qué hacer -->
-            <div id="second">
-              <h3>¿Qué hacer ?</h3>
-            </div>
+          </article>
+        </div>
+        <!-- Qué hacer -->
+        <div id="second">
+          <h3>¿Qué hacer ?</h3>
+        </div>
 
-            <!---------->
-            <div id="third">
-              <h3>¿Donde quedarse?</h3>
-            </div>
-            <!---------->
+        <!---------->
+        <div id="third">
+          <h3>¿Donde quedarse?</h3>
+        </div>
+        <!---------->
 
-            <div id="fourth">
-              <h3>¿Qué comer?</h3>
-              <!---------->
-            </div>
-            <div id="fifth">
-              <h3>¿Qué te llevas?</h3>
-              <!---------->
-            </div>
+        <div id="fourth">
+          <h3>¿Qué comer?</h3>
+          <!---------->
+        </div>
+        <div id="fifth">
+          <h3>¿Qué te llevas?</h3>
+          <!---------->
+        </div>
 
-          </div>
-        </section>
-        <section id="contacto">
-          <p>Contactame</p>
-        </section>
-    </div>
-
- <footer>
-
- </footer>
-
- <script type="text/javascript" src="assets/js/main.js"></script>
- <script type="text/javascript" src="assets/js/funcionAparecer.js"></script>
-
+      </div>
+    </section>
+  </div>
+  <section class="sign-up-log-in relative" id="contacto">
+    <form class="form-signup" id="signup-box">
+      <h2 id="form-signup-heading">Contáctanos</h2>
+      <div class="input-box">
+        <input type="text" id="name" class="form-control" placeholder="Ingrese su nombre">
+      </div>
+      <div class="input-box">
+        <input type="text" id="lastname" class="form-control" placeholder="Ingrese su apellido">
+      </div>
+      <div class="input-box">
+        <input type="email" id="input-email" class="form-control" placeholder="Ingrese su correo electrónico">
+      </div>
+      <div class="input-box">
+        <input type="password" id="input-password" class="form-control" placeholder="Ingrese su contraseña">
+      </div>
+      <div class="input-box">
+        <textarea class="form-control" id="coment" rows="8" placeholder="Ingresa tu comentario"></textarea>
+      </div>
+      <button id="registrar" class="submit-btn" type="submit">Registrar</button>
+    </form>
+  </section>
+  <section class="redes-fix">
+    <a href="https://www.instagram.com/"><span class="icon-instagram block"></span></a>
+    <a href="https://es-la.facebook.com/"><span class="icon-facebook-square block"></span></a>
+    <a href="https://twitter.com/?lang=es"><span class="icon-twitter-square block"></span></a>
+    <a href="https://www.youtube.com/?gl=PE&hl=es-419"><span class="icon-youtube-play block"></span></a>
+    <a href="https://es.pinterest.com/"><span class="icon-pinterest-p block"></span></a>
+    <a href="https://plus.google.com/"><span class="icon-google-plus-square blockl"></span></a>
+    <a href="https://web.whatsapp.com/"><span class="icon-whatsapp block"></span></a>
+  </section>
+  <footer>
+    <section class="content-footer relative">
+      <section class="payment in-block">
+        <span class="icon-cc-visa"></span>
+        <span class="icon-cc-mastercard"></span>
+        <span class="icon-cc-paypal"></span>
+      </section>
+      <section class="location in-block">
+        <div>
+          <span class="icon-map-marker"></span>
+          <h3 class="in-block">Oficina prinicipal</h3>
+          <p>av. Pardo 601</p>
+        </div>
+      </section>
+      <section class="phones in-block">
+        <span  class="icon-phone"></span>
+        <h3 class="in-block">Teléfonos</h3>
+        <p>Lima: (511)5053333</p>
+        <p></p>
+      </section>
+      <section class="redes in-block">
+        <a href=""><span class="icon-instagram"></span></a>
+        <a href="https://es-la.facebook.com/"><span class="icon-facebook-square"></span></a>
+        <a href="https://twitter.com/?lang=es"><span class="icon-twitter-square"></span></a>
+        <a href="https://www.youtube.com/?gl=PE&hl=es-419"><span class="icon-youtube-play"></span></a>
+        <a href="https://es.pinterest.com/"><span class="icon-pinterest-p"></span></a>
+        <a href="https://plus.google.com/"><span class="icon-google-pl"></span></a>
+        <a href="https://web.whatsapp.com/"><span class="icon-whatsapp"></span></a>
+      </section>
+    </section>
+  </footer>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+  <script type="text/javascript" src="assets/js/userLS.js"></script>
+  <script type="text/javascript" src="assets/js/form.js"></script>
+  <script type="text/javascript" src="assets/js/funcionAparecer.js"></script>
 </body>
 </html>
