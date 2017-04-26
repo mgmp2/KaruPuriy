@@ -203,6 +203,7 @@
                fourthInf (index,nombre);
                fifthInf(index,nombre);
 
+
             }
              else {
                sec.removeChild(sec.lastChild);

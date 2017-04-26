@@ -1,15 +1,13 @@
-
-
 function secondInf(ind, nombre){
   var dep = document.getElementById("info-department");
   var nDep = document.createTextNode(nombre);
   mainTitle.innerHTML = nombre;
   dep.appendChild(mainTitle);
-  dep.insertBefore(mainTitle, document.getElementById("first"));
+  dep.insertBefore(mainTitle, sec);
 
   var cdf = document.createDocumentFragment();
   var art = document.createElement("article");
-arrayDep[ind].segundoPaso.forEach(function(e,i){
+  arrayDep[ind].segundoPaso.forEach(function(e,i){
      var div = document.createElement("div");
      div.classList.add("info-"+nombre+i);
      var img = document.createElement("img");
@@ -28,12 +26,6 @@ arrayDep[ind].segundoPaso.forEach(function(e,i){
 }
 
 function thirdInf (ind,nombre){
-  var dep = document.getElementById("info-department");
-  var nDep = document.createTextNode(nombre);
-  mainTitle.innerHTML = nombre;
-  dep.appendChild(mainTitle);
-  dep.insertBefore(mainTitle, document.getElementById("first"));
-
   var cdf = document.createDocumentFragment();
   var art = document.createElement("article");
   arrayDep[ind].tercerPaso.forEach(function(e,i){
@@ -53,12 +45,6 @@ function thirdInf (ind,nombre){
   thr.appendChild(art);
 };
 function fourthInf(ind,nombre){
-  var dep = document.getElementById("info-department");
-  var nDep = document.createTextNode(nombre);
-  mainTitle.innerHTML = nombre;
-  dep.appendChild(mainTitle);
-  dep.insertBefore(mainTitle, document.getElementById("first"));
-
   var cdf = document.createDocumentFragment();
   var art = document.createElement("article");
   arrayDep[ind].cuartoPaso.forEach(function(e,i){
@@ -79,11 +65,6 @@ function fourthInf(ind,nombre){
 }
 
 function fifthInf(ind,nombre){
-  var dep = document.getElementById("info-department");
-  var nDep = document.createTextNode(nombre);
-  mainTitle.innerHTML = nombre;
-  dep.appendChild(mainTitle);
-  dep.insertBefore(mainTitle, document.getElementById("first"));
 
   var cdf = document.createDocumentFragment();
   var art = document.createElement("article");
