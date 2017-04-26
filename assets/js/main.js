@@ -116,7 +116,7 @@
 
                        },
                        {nombre: "Trujillo", description: "Es la capital del departamento peruano de La Libertad, la ciudad más poblada del norte del Perú y la tercera ciudad más poblada del país; tiene al año 2015, una población estimada de 823.110 habitantes ",
-                       
+
                        segundoPaso: [  {url: "assets/img/Trujillo/queHacer/img-01.jpg", nombre: "Visitar Huanchaco"},
                                        {url: "assets/img/Trujillo/queHacer/img-02.jpg", nombre: "Pasear al Monumento"},
                                        {url: "assets/img/Trujillo/queHacer/img-03.jpg", nombre: "Ir Huaca Esmeralda"}
@@ -214,7 +214,6 @@
                thirdInf(index,nombre);
                 fourthInf (index,nombre);
                 fifthInf(index,nombre);
-
 
              }
             (document.getElementById("box-departament")).classList.add("disappear");

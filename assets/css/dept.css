@@ -1,4 +1,6 @@
-
+#departamento {
+    background-color: rgba(109, 174, 215, 0.8);
+}
 #departamento:before, #departamento:after {
     content: " ";
     display: table;
