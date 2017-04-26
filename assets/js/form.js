@@ -84,7 +84,6 @@ window.addEventListener("load", function(){
         createTooltip(parentElement, "Todos los campos son obligatorios.");
       } else {
         allClients.unshift(newClient);
-        console.log(allClients);
         localStorage.setItem("allClients",JSON.stringify(allClients));
         if(parentElement.lastElementChild.getAttribute("class") == "tooltiptext"){
             parentElement.lastElementChild.style.display = "none";}
