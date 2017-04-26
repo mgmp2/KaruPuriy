@@ -67,7 +67,22 @@ a:hover{
   position: relative;
 }
 
+/*nosotras*/
+#nosotras > h4 {
+  font-size: 25px;
+  color: red;
+  text-align: center;
+}
+.box-nosotras {
 
+}
+.box-nosotras > .we-photo {
+  width: 280px;
+  display: inline-block;
+}
+.we-photo > img {
+  width: 100%;
+}
 
 /*footer*/
 footer {
