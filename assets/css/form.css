@@ -1,22 +1,17 @@
 .sign-up-log-in{
-  max-width: 60%;
+  max-width: 35%;
   margin: auto;
 }
 
-.form-sign-in-container, .btn-container-log-in{
-    top: 0;;
-    right: 0;    
-}
-
-section[class^="form"], section[class^="btn-container"]{
+.form-signup{
     margin: 1rem;
-    max-width: 53rem;
-    width: 46%;
+    width: 100%;
     font-size: 1rem;
     border-radius: 1.5rem;
     padding: 1.5rem;
-    background-color: #DADADA;
+    background-color: rgba(218, 218, 218, 0.71);;
     box-shadow: 0.3rem 0.3rem 1rem black;
+    text-align: center;
 }
 
 .input-box{
@@ -24,7 +19,7 @@ section[class^="form"], section[class^="btn-container"]{
 }
 
 .input-box .form-control{
-    width: 100%;
+    width: 90%;
     padding: 0.5rem;
     border-radius: 0.5rem;
     margin-bottom: 0.5rem;
@@ -33,7 +28,7 @@ section[class^="form"], section[class^="btn-container"]{
 
 button[type="submit"]{
     margin: 1rem;
-    width: 100%;
+    width: 65%;
     font-size: 1.5rem;
     color: #fff;
     font-weight: bolder;

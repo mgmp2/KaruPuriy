@@ -11,7 +11,7 @@ footer {
 
 .content-footer section{
     max-width: 18rem;
-    width: 23%;
+    width: 24%;
     text-align: center;
 }
 
@@ -20,7 +20,7 @@ footer {
     top: -2rem;
 }
 .redes span, .payment span{
-    margin: 0 0.3rem;
+    margin: 0 0.2rem;
 }
 
 /*redes fixed*/
@@ -36,4 +36,8 @@ footer {
     font-size: 2.5rem;
     margin: 0.5rem 0;
     color: yellowgreen;
+}
+
+.redes-fix a, .redes a{
+    padding: 0;
 }
