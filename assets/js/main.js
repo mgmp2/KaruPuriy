@@ -34,19 +34,20 @@
                                         {url: "assets/img/Cajamarca/queHacer/img-02.jpg", nombre: "Abril-Fiesta de las Cruces de Porcon"},
                                         {url: "assets/img/Cajamarca/queHacer/img-03.jpg", nombre: "Junio-San Juan Bautista"}
                                      ],
-                        tercerPaso: [ {url: "assets/img/Cajamarca/hotel/img-01.jpg", nombre: "PRIMERhoTEL"},
-                                      {url: "assets/img/Cajamarca/hotel/img-01.jpg", nombre: "PRIMERhoTEL"},
-                                      {url: "assets/img/Cajamarca/hotel/img-01.jpg", nombre: "PRIMERhoTEL"}
+                        tercerPaso: [ {url: "assets/img/Cajamarca/hotel/img-01.jpg", nombre: "HOTEL BALCONES PLAZA"},
+                                      {url: "assets/img/Cajamarca/hotel/img-02.jpg", nombre: "Atlantis Hotel & Casino"},
+                                      {url: "assets/img/Cajamarca/hotel/img-03.jpg", nombre: "Hotel & Spa Laguna Seca "}
 
                                     ],
-                        cuartoPaso: [ {url: "assets/img/Cajamarca/plato/img-01.jpg", nombre:"adjkj"},
-                                      {url: "assets/img/Cajamarca/plato/img-01.jpg", nombre: "PRIMERhoTEL"},
-                                      {url: "assets/img/Cajamarca/plato/img-01.jpg", nombre: "PRIMERhoTEL"}
+                        cuartoPaso: [ {url: "assets/img/Cajamarca/plato/img-01.jpg", nombre:"Caldo Verde"},
+                                      {url: "assets/img/Cajamarca/plato/img-02.jpg", nombre: "Sopa de Chochoca"},
+                                      {url: "assets/img/Cajamarca/plato/img-03.jpg", nombre: "Humitas saladas y dulces"},
+                                      {url: "assets/img/Cajamarca/plato/img-04.jpg", nombre: "Manjar Blanco"}
 
                                     ],
-                        quintoPaso: [ {url: "assets/img/Cajamarca/llevar/img-01.jpg", nombre:"adjkj"},
-                                      {url: "assets/img/Cajamarca/llevar/img-01.jpg", nombre: "PRIMERhoTEL"},
-                                      {url: "assets/img/Cajamarca/llevar/img-01.jpg", nombre: "PRIMERhoTEL"}
+                        quintoPaso: [ {url: "assets/img/Cajamarca/llevar/img-01.jpg", nombre:"Ponchos, sombreros,alfombra, etc."},
+                                      {url: "assets/img/Cajamarca/llevar/img-02.jpg", nombre: "Artesania en Madera"},
+                                      {url: "assets/img/Cajamarca/llevar/img-03.jpg", nombre: "Muñecas con traje típico"}
 
                                     ]
 
@@ -58,23 +59,24 @@
                                      {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
                                      {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"}
                                    ],
-                       segundoPaso: [  {url: "assets/img/Tumbes/queHacer/img-01.jpg", nombre: "Octubre-Fiesta del Señor Cautivo de Ayabaca"},
-                                       {url: "assets/img/Tumbes/queHacer/img-02.jpg", nombre: "Visitar distrito de Zorritos"},
-                                       {url: "assets/img/Tumbes/queHacer/img-03.jpg", nombre: "Puedes ir a la playa o pescar"}
+                       segundoPaso: [  {url: "assets/img/Tumbes/queHacer/img-01.jpg", nombre: "Visitar playas: Zorritos, Punta Sal y Mancora"},
+                                       {url: "assets/img/Tumbes/queHacer/img-02.jpg", nombre: "Visitar Cacique Chilimasa"},
+                                       {url: "assets/img/Tumbes/queHacer/img-03.jpg", nombre: "Ir a la Plaza de Armas"}
                                     ],
-                       tercerPaso: [ {url: "assets/img/Tumbes/hotel/img-01.jpg", nombre: "PRIMERhoTEL"},
-                                     {url: "assets/img/Tumbes/hotel/img-01.jpg", nombre: "PRIMERhoTEL"},
-                                     {url: "assets/img/Tumbes/hotel/img-01.jpg", nombre: "PRIMERhoTEL"}
-
+                       tercerPaso: [ {url: "assets/img/Tumbes/hotel/img-01.jpg", nombre: "Costas del Sol"},
+                                     {url: "assets/img/Tumbes/hotel/img-02.jpg", nombre: "Jer's Hotel"},
+                                     {url: "assets/img/Tumbes/hotel/img-03.jpg", nombre: "Maliah  Beach Club Hotel"}
                                    ],
-                       cuartoPaso: [ {url: "assets/img/Tumbes/plato/img-01.jpg", nombre:"adjkj"},
-                                     {url: "assets/img/Tumbes/plato/img-01.jpg", nombre: "PRIMERhoTEL"},
-                                     {url: "assets/img/Tumbes/plato/img-01.jpg", nombre: "PRIMERhoTEL"}
-
+                       cuartoPaso: [ {url: "assets/img/Tumbes/plato/img-01.jpg", nombre:"Ceviche de conchas negras"},
+                                      {url: "assets/img/Tumbes/plato/img-02.jpg", nombre: "Chilcano de pescado"},
+                                      {url: "assets/img/Tumbes/plato/img-03.jpg", nombre: "El majarisco tumbesino"},
+                                      {url: "assets/img/Tumbes/plato/img-04.jpg", nombre: "Enrollado de mero en pulpa de cangrejo"},
+                                      {url: "assets/img/Tumbes/plato/img-05.jpg", nombre: "Albóndigas de pulpa de cangrejo"},
+                                      {url: "assets/img/Tumbes/plato/img-06.jpg", nombre: "Chupe de Cangrejo"}
                                    ],
-                       quintoPaso: [ {url: "assets/img/Tumbes/llevar/img-01.jpg", nombre:"adjkj"},
-                                     {url: "assets/img/Tumbes/llevar/img-01.jpg", nombre: "PRIMERhoTEL"},
-                                     {url: "assets/img/Tumbes/llevar/img-01.jpg", nombre: "PRIMERhoTEL"}
+                       quintoPaso: [ {url: "assets/img/Tumbes/llevar/img-01.jpg", nombre:"Artesanía en Puerto Pizarro"},
+                                     {url: "assets/img/Tumbes/llevar/img-02.jpg", nombre: "Caballito de Mar"},
+                                     {url: "assets/img/Tumbes/llevar/img-03.jpg", nombre: "Paseos en bote"}
 
                                    ]
 
@@ -90,19 +92,18 @@
                                        {url: "assets/img/Piura/queHacer/img-02.jpg", nombre: "Visitar al Parque Nacional de Amotape"},
                                        {url: "assets/img/Piura/queHacer/img-03.jpg", nombre: "Playa, artesania y culturas"}
                                     ],
-                       tercerPaso: [ {url: "assets/img/Piura/hotel/img-01.jpg", nombre: "PRIMERhoTEL"},
-                                     {url: "assets/img/Piura/hotel/img-01.jpg", nombre: "PRIMERhoTEL"},
-                                     {url: "assets/img/Piura/hotel/img-01.jpg", nombre: "PRIMERhoTEL"}
+                       tercerPaso: [ {url: "assets/img/Piura/hotel/img-01.jpg", nombre: "Hotel San José"},
+                                     {url: "assets/img/Piura/hotel/img-02.jpg", nombre: "Hotel las arenas"}
 
                                    ],
-                       cuartoPaso: [ {url: "assets/img/Piura/plato/img-01.jpg", nombre:"adjkj"},
-                                     {url: "assets/img/Piura/plato/img-01.jpg", nombre: "PRIMERhoTEL"},
-                                     {url: "assets/img/Piura/plato/img-01.jpg", nombre: "PRIMERhoTEL"}
+                       cuartoPaso: [ {url: "assets/img/Piura/plato/img-01.jpg", nombre:"Enrollado de Langostino"},
+                                     {url: "assets/img/Piura/plato/img-02.jpg", nombre: "Seco de Cabrito con frejoles y chicha de Jora"},
+                                     {url: "assets/img/Piura/plato/img-03.jpg", nombre: "Seco de Chavelo"}
 
                                    ],
-                       quintoPaso: [ {url: "assets/img/Piura/llevar/img-01.jpg", nombre:"adjkj"},
-                                     {url: "assets/img/Piura/llevar/img-01.jpg", nombre: "PRIMERhoTEL"},
-                                     {url: "assets/img/Piura/llevar/img-01.jpg", nombre: "PRIMERhoTEL"}
+                       quintoPaso: [ {url: "assets/img/Piura/llevar/img-01.jpg", nombre:"Aventura de buceo"},
+                                     {url: "assets/img/Piura/llevar/img-02.jpg", nombre: "Artesania"},
+                                     {url: "assets/img/Piura/llevar/img-03.jpg", nombre: "Artesania hecho a paja"}
 
                                    ]
 
@@ -118,19 +119,18 @@
                                        {url: "assets/img/Chiclayo/queHacer/img-02.jpg", nombre: "Visitar Museo Tumbas Reales de Sipán"},
                                        {url: "assets/img/Chiclayo/queHacer/img-03.jpg", nombre: "Paseo de Yourtuque"}
                                     ],
-                       tercerPaso: [ {url: "assets/img/Chiclayo/hotel/img-01.jpg", nombre: "PRIMERhoTEL"},
-                                     {url: "assets/img/Chiclayo/hotel/img-01.jpg", nombre: "PRIMERhoTEL"},
-                                     {url: "assets/img/Chiclayo/hotel/img-01.jpg", nombre: "PRIMERhoTEL"}
+                       tercerPaso: [ {url: "assets/img/Chiclayo/hotel/img-01.jpg", nombre: "Costa del Sol Ramada"},
+                                     {url: "assets/img/Chiclayo/hotel/img-02.jpg", nombre: "WinMeier Hotel"},
+                                     {url: "assets/img/Chiclayo/hotel/img-03.jpg", nombre: "Hotel Gran Sipan"}
 
                                    ],
-                       cuartoPaso: [ {url: "assets/img/Chiclayo/plato/img-01.jpg", nombre:"adjkj"},
-                                     {url: "assets/img/Chiclayo/plato/img-01.jpg", nombre: "PRIMERhoTEL"},
-                                     {url: "assets/img/Chiclayo/plato/img-01.jpg", nombre: "PRIMERhoTEL"}
+                       cuartoPaso: [ {url: "assets/img/Chiclayo/plato/img-01.jpg", nombre:"Arroz con Pato"},
+                                     {url: "assets/img/Chiclayo/plato/img-02.jpg", nombre: "Chinguirito"},
+                                     {url: "assets/img/Chiclayo/plato/img-03.jpg", nombre: "Cuy Frito"}
 
                                    ],
-                       quintoPaso: [ {url: "assets/img/Chiclayo/llevar/img-01.jpg", nombre:"adjkj"},
-                                     {url: "assets/img/Chiclayo/llevar/img-01.jpg", nombre: "PRIMERhoTEL"},
-                                     {url: "assets/img/Chiclayo/llevar/img-01.jpg", nombre: "PRIMERhoTEL"}
+                       quintoPaso: [ {url: "assets/img/Chiclayo/llevar/img-01.jpg", nombre:"Un inolvidable día en el Paseo de las Musas"},
+                                     {url: "assets/img/Chiclayo/llevar/img-02.jpg", nombre: "Ricos King Kong"}
 
                                    ]
 
@@ -142,23 +142,23 @@
                                      {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
                                      {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"}
                                    ],
-                       segundoPaso: [  {url: "assets/img/Trujillo/queHacer/img-01.jpg", nombre: "Febrero-Carmaval de Cajamarca"},
-                                       {url: "assets/img/Trujillo/queHacer/img-02.jpg", nombre: "Cajamar"},
-                                       {url: "assets/img/Trujillo/queHacer/img-03.jpg", nombre: "Cajamar"}
+                       segundoPaso: [  {url: "assets/img/Trujillo/queHacer/img-01.jpg", nombre: "Visitar Huanchaco"},
+                                       {url: "assets/img/Trujillo/queHacer/img-02.jpg", nombre: "Pasear al Monumento"},
+                                       {url: "assets/img/Trujillo/queHacer/img-03.jpg", nombre: "Ir Huaca Esmeralda"}
                                     ],
-                       tercerPaso: [ {url: "assets/img/Trujillo/hotel/img-01.jpg", nombre: "PRIMERhoTEL"},
-                                     {url: "assets/img/Trujillo/hotel/img-01.jpg", nombre: "PRIMERhoTEL"},
-                                     {url: "assets/img/Trujillo/hotel/img-01.jpg", nombre: "PRIMERhoTEL"}
+                       tercerPaso: [ {url: "assets/img/Trujillo/hotel/img-01.jpg", nombre: "Palacio Chaves Hotel"},
+                                     {url: "assets/img/Trujillo/hotel/img-02.jpg", nombre: "El Baciyelmo"},
+                                     {url: "assets/img/Trujillo/hotel/img-03.jpg", nombre: "Parador de Trujillo"}
 
                                    ],
-                       cuartoPaso: [ {url: "assets/img/Trujillo/plato/img-01.jpg", nombre:"adjkj"},
-                                     {url: "assets/img/Trujillo/plato/img-01.jpg", nombre: "PRIMERhoTEL"},
-                                     {url: "assets/img/Trujillo/plato/img-01.jpg", nombre: "PRIMERhoTEL"}
+                       cuartoPaso: [ {url: "assets/img/Trujillo/plato/img-01.jpg", nombre:"Cabrito"},
+                                     {url: "assets/img/Trujillo/plato/img-02.jpg", nombre: "Shambar"},
+                                     {url: "assets/img/Trujillo/plato/img-03.jpg", nombre: "Ceviche"}
 
                                    ],
-                       quintoPaso: [ {url: "assets/img/Trujillo/llevar/img-01.jpg", nombre:"adjkj"},
-                                     {url: "assets/img/Trujillo/llevar/img-01.jpg", nombre: "PRIMERhoTEL"},
-                                     {url: "assets/img/Trujillo/llevar/img-01.jpg", nombre: "PRIMERhoTEL"}
+                       quintoPaso: [ {url: "assets/img/Trujillo/llevar/img-01.jpg", nombre:"Paseo en Caballo"},
+                                     {url: "assets/img/Trujillo/llevar/img-02.jpg", nombre: "Diversión"},
+                                     {url: "assets/img/Trujillo/llevar/img-03.jpg", nombre: "Adornos hermosos"}
 
                                    ]
 

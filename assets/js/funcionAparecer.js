@@ -9,7 +9,7 @@ function secondInf(ind, nombre){
 
   var cdf = document.createDocumentFragment();
   var art = document.createElement("article");
-  arrayDep[ind].segundoPaso.forEach(function(e,i){
+arrayDep[ind].segundoPaso.forEach(function(e,i){
      var div = document.createElement("div");
      div.classList.add("info-"+nombre+i);
      var img = document.createElement("img");
