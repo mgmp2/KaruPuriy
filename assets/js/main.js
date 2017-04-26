@@ -24,12 +24,7 @@
     }, false);
 
     var arrayDep =   [{nombre: "Cajamarca", description: "Está situada a 2750 msnm en la margen este de la cadena oriental de la Cordillera de los Andes, en el valle interandino que forman los ríos Mashcon y Chonta",
-                        primerPaso: [ {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
-                                      {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
-                                      {salida:"6:00 p.m", llegada: "8:50", duracion: "15h", precio: "S/.100/120"},
-                                      {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
-                                      {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"}
-                                    ],
+
                         segundoPaso: [  {url: "assets/img/Cajamarca/queHacer/img-01.jpg", nombre: "Febrero-Carmaval de Cajamarca"},
                                         {url: "assets/img/Cajamarca/queHacer/img-02.jpg", nombre: "Abril-Fiesta de las Cruces de Porcon"},
                                         {url: "assets/img/Cajamarca/queHacer/img-03.jpg", nombre: "Junio-San Juan Bautista"}
@@ -53,12 +48,7 @@
 
                         },
                        {nombre: "Tumbes", description: "Es una ciudad del extremo noroeste del Perú, situada cerca de la desembocadura del río Tumbes en el golfo de Guayaquil (océano Pacífico) ",
-                       primerPaso: [ {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
-                                     {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
-                                     {salida:"6:00 p.m", llegada: "8:50", duracion: "15h", precio: "S/.100/120"},
-                                     {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
-                                     {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"}
-                                   ],
+
                        segundoPaso: [  {url: "assets/img/Tumbes/queHacer/img-01.jpg", nombre: "Visitar playas: Zorritos, Punta Sal y Mancora"},
                                        {url: "assets/img/Tumbes/queHacer/img-02.jpg", nombre: "Visitar Cacique Chilimasa"},
                                        {url: "assets/img/Tumbes/queHacer/img-03.jpg", nombre: "Ir a la Plaza de Armas"}
@@ -82,12 +72,7 @@
 
                        },
                        {nombre: "Piura", description: "Está ubicada en el centro oeste de la región, en el valle del río Piura, al norte del desierto de Sechura, a 981 km al norte de Lima y próxima a la frontera con el Ecuador.  ",
-                       primerPaso: [ {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
-                                     {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
-                                     {salida:"6:00 p.m", llegada: "8:50", duracion: "15h", precio: "S/.100/120"},
-                                     {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
-                                     {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"}
-                                   ],
+
                        segundoPaso: [  {url: "assets/img/Piura/queHacer/img-01.jpg", nombre: "Playa, surf, mochiler y vida nocturna"},
                                        {url: "assets/img/Piura/queHacer/img-02.jpg", nombre: "Visitar al Parque Nacional de Amotape"},
                                        {url: "assets/img/Piura/queHacer/img-03.jpg", nombre: "Playa, artesania y culturas"}
@@ -109,12 +94,7 @@
 
                        },
                        {nombre: "Chiclayo", description: "Está situada a 13 kilómetros de la costa del Pacífico y 770 kilómetros de la capital del país.",
-                       primerPaso: [ {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
-                                     {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
-                                     {salida:"6:00 p.m", llegada: "8:50", duracion: "15h", precio: "S/.100/120"},
-                                     {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
-                                     {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"}
-                                   ],
+
                        segundoPaso: [  {url: "assets/img/Chiclayo/queHacer/img-01.jpg", nombre: "Visitar Plaza de Armas"},
                                        {url: "assets/img/Chiclayo/queHacer/img-02.jpg", nombre: "Visitar Museo Tumbas Reales de Sipán"},
                                        {url: "assets/img/Chiclayo/queHacer/img-03.jpg", nombre: "Paseo de Yourtuque"}
@@ -136,12 +116,7 @@
 
                        },
                        {nombre: "Trujillo", description: "Es la capital del departamento peruano de La Libertad, la ciudad más poblada del norte del Perú y la tercera ciudad más poblada del país; tiene al año 2015, una población estimada de 823.110 habitantes ",
-                       primerPaso: [ {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
-                                     {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
-                                     {salida:"6:00 p.m", llegada: "8:50", duracion: "15h", precio: "S/.100/120"},
-                                     {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"},
-                                     {salida:"5:50 p.m", llegada: "8:50", duracion: "15h", precio: "S/.80/100"}
-                                   ],
+                       
                        segundoPaso: [  {url: "assets/img/Trujillo/queHacer/img-01.jpg", nombre: "Visitar Huanchaco"},
                                        {url: "assets/img/Trujillo/queHacer/img-02.jpg", nombre: "Pasear al Monumento"},
                                        {url: "assets/img/Trujillo/queHacer/img-03.jpg", nombre: "Ir Huaca Esmeralda"}
