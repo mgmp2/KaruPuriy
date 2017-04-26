@@ -20,18 +20,18 @@ var expRegEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 function validateEachInput(expRegular, spanText1){
     var input = event.target;
     var parentInput = input.parentNode;
-    if(!expRegular.test(input.value)){
+    if(!expRegular.test(input.value)) {
       createTooltip(parentInput, spanText1);
-    }else if(parentInput.lastElementChild.getAttribute("class") == "tooltiptext"){
+    } else if(parentInput.lastElementChild.getAttribute("class") == "tooltiptext") {
       parentInput.lastElementChild.style.display = "none";
     }
 }
 
 function createTooltip(parentElement, messageToTooltip){
-    if(parentElement.lastElementChild.getAttribute("class") =="tooltiptext"){
+    if(parentElement.lastElementChild.getAttribute("class") =="tooltiptext") {
       parentElement.lastElementChild.innerHTML = messageToTooltip;
       parentElement.lastElementChild.style.display = "block";
-    }else{
+    } else {
       var span = document.createElement("span");
       span.setAttribute("class","tooltiptext");
       span.innerHTML = messageToTooltip;
@@ -75,17 +75,14 @@ window.addEventListener("load", function(){
     if(!localStorage.getItem("allClients")){
       localStorage.setItem('allClients',JSON.stringify(allClients));
     }
-    if(!localStorage.getItem("signIn")){
-      localStorage.setItem("signIn",JSON.stringify(signIn));
-    }
 
    document.getElementById("registrar").addEventListener("click", function(e){
       e.preventDefault();
       var newClient = new ClientData(name1.value, lastname.value, email.value, pass.value, coment.value);
       var parentElement = event.target.parentNode;
-      if(name1.value.trim().length == 0 || lastname.value.trim().length == 0 || email.value.trim().length == 0 || pass.value.trim().length == 0 || coment.value.trim().length == 0){
+      if(name1.value.trim().length == 0 || lastname.value.trim().length == 0 || email.value.trim().length == 0 || pass.value.trim().length == 0 || coment.value.trim().length == 0) {
         createTooltip(parentElement, "Todos los campos son obligatorios.");
-      }else {
+      } else {
         allClients.unshift(newClient);
         console.log(allClients);
         localStorage.setItem("allClients",JSON.stringify(allClients));

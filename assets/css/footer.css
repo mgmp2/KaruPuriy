@@ -6,8 +6,8 @@ footer {
 }
 
 .content-footer{
-  width: 90%;
-  margin: auto;
+    width: 90%;
+    margin: auto;
 }
 
 .content-footer section{
@@ -25,7 +25,7 @@ footer {
 }
 
 .copy{
-  right: 6rem;
+    right: 6rem;
 }
 
 /*redes fixed*/
